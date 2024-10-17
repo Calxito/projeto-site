@@ -1,0 +1,54 @@
+/* Cores da paleta verde e branco */
+:root {
+  --cor-fundo: #f5f5f5; /* Fundo branco claro */
+  --cor-primaria: #006400; /* Verde escuro para títulos e botões */
+  --cor-secundaria: #32cd32; /* Verde limão para detalhes */
+  --cor-borda: #228b22; /* Verde floresta para bordas */
+  --cor-texto: #333; /* Texto em cinza escuro para contraste */
+  --cor-hover: #2e8b57; /* Verde mar para hover */
+}
+
+/* Exemplo de aplicação da paleta */
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: Arial, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--cor-primaria);
+}
+
+a {
+  color: var(--cor-secundaria);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--cor-hover);
+}
+
+button {
+  background-color: var(--cor-primaria);
+  color: #fff;
+  border: 1px solid var(--cor-borda);
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--cor-hover);
+}
+
+table,
+th,
+td {
+  border: 1px solid var(--cor-borda);
+}
+
+td {
+  background-color: var(--cor-fundo);
+  padding: 8px;
+}
