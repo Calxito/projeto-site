@@ -13,14 +13,25 @@
     U+FE2E-FE2F;
 }
 
-/* Adicione suas outras definições de @font-face aqui */
+/* Defina suas variáveis de cores aqui */
+:root {
+  --cor-fundo: #161b33; /* Fundo em azul escuro */
+  --cor-fundo-claro: #2a3042; /* Fundo dos blocos de texto */
+  --cor-primaria: #597081; /* Preto para títulos e botões */
+  --cor-secundaria: #929292b4; /* Azul turquesa para detalhes */
+  --cor-borda: #f1dac4; /* Cinza escuro para bordas */
+  --cor-texto: #fffefe; /* Cor do texto */
+  --cor-hover: #12121359; /* Preto mais escuro para hover */
+}
 
+/* Estilo do body */
 body {
   background-color: var(--cor-fundo);
   color: var(--cor-texto);
-  font-family: "Inter", Arial, sans-serif; /* Aplicação da fonte Inter */
+  font-family: "Inter", Arial, sans-serif;
 }
 
+/* Estilos para títulos e links */
 h1,
 h2,
 h3 {
@@ -36,18 +47,22 @@ a:hover {
   color: var(--cor-hover);
 }
 
+/* Botões */
 button {
   background-color: var(--cor-primaria);
   color: #fff;
   border: 1px solid var(--cor-borda);
   padding: 8px 16px;
   cursor: pointer;
+  margin-top: 16px;
+  border-radius: 5px;
 }
 
 button:hover {
   background-color: var(--cor-hover);
 }
 
+/* Tabelas */
 table,
 th,
 td {
@@ -59,12 +74,40 @@ td {
   padding: 8px;
 }
 
-/* Defina suas variáveis de cores aqui */
-:root {
-  --cor-fundo: #161b33; /* Fundo em cinza claro */
-  --cor-primaria: #597081; /* Preto para títulos e botões */
-  --cor-secundaria: #929292b4; /* Azul turquesa para detalhes */
-  --cor-borda: #f1dac4; /* Cinza escuro para bordas */
-  --cor-texto: #fffefe; /* Cinza médio para texto */
-  --cor-hover: #12121359; /* Preto mais escuro para hover */
+/* Centralização */
+.centered-box {
+  display: inline-block;
+  padding: 20px;
+  border: 2px solid var(--cor-borda);
+  margin-bottom: 16px;
+  background-color: var(--cor-fundo-claro);
+  color: var(--cor-texto);
+}
+
+/* Container para centralização */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilo de cada tópico */
+.topic-box {
+  border: 2px solid var(--cor-borda); /* Borda ao redor dos tópicos */
+  padding: 16px; /* Espaçamento interno */
+  margin-bottom: 20px; /* Espaçamento entre os tópicos */
+  background-color: var(--cor-fundo-claro); /* Cor de fundo para os tópicos */
+  color: var(--cor-texto); /* Cor do texto */
+}
+
+/* Estilo de texto com quadrados ao redor dos blocos de texto */
+.text-box {
+  border: 2px solid var(--cor-borda); /* Adiciona uma borda ao redor do texto */
+  padding: 16px; /* Adiciona espaçamento interno */
+  margin-bottom: 16px; /* Espaçamento entre os elementos */
+  background-color: var(
+    --cor-fundo-claro
+  ); /* Cor de fundo dos blocos de texto */
+  color: var(--cor-texto); /* Cor do texto dentro do quadrado */
 }
