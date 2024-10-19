@@ -1,0 +1,70 @@
+/* Importação da fonte Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Definições de @font-face */
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCm3FwrK3iLTcvnUwkT9nA2.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+/* Adicione suas outras definições de @font-face aqui */
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: "Inter", Arial, sans-serif; /* Aplicação da fonte Inter */
+}
+
+h1,
+h2,
+h3 {
+  color: var(--cor-primaria);
+}
+
+a {
+  color: var(--cor-secundaria);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--cor-hover);
+}
+
+button {
+  background-color: var(--cor-primaria);
+  color: #fff;
+  border: 1px solid var(--cor-borda);
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--cor-hover);
+}
+
+table,
+th,
+td {
+  border: 1px solid var(--cor-borda);
+}
+
+td {
+  background-color: var(--cor-fundo);
+  padding: 8px;
+}
+
+/* Defina suas variáveis de cores aqui */
+:root {
+  --cor-fundo: #161b33; /* Fundo em cinza claro */
+  --cor-primaria: #597081; /* Preto para títulos e botões */
+  --cor-secundaria: #929292b4; /* Azul turquesa para detalhes */
+  --cor-borda: #f1dac4; /* Cinza escuro para bordas */
+  --cor-texto: #fffefe; /* Cinza médio para texto */
+  --cor-hover: #12121359; /* Preto mais escuro para hover */
+}

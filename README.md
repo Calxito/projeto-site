@@ -1,2 +1,2 @@
 # projeto-site
- sa porra que temos que entregar ate dia 12
+ Este site é um projeto de extensão dedicado à doação de um website para Heitor Silvério Lopes.
