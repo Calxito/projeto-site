@@ -30,6 +30,9 @@ h1 {
   font-style: normal;
   font-size: 32px;
   color: #0b0d0fd0;
+  position: relative;
+  top: 50px;
+  left: 100;
 }
 
 h2 {
