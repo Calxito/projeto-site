@@ -15,10 +15,158 @@
 
 /* Adicione suas outras definições de @font-face aqui */
 
+/* 1 */
 body {
-  background-color: var(--cor-fundo);
-  color: var(--cor-texto);
+  background-color: #0B1642;
+  color: rgb(0, 0, 0);
   font-family: "Inter", Arial, sans-serif; /* Aplicação da fonte Inter */
+  background-image: url('ciencia-da-computacao-2.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.CorFundo {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.EspacoPara li {
+  margin-bottom: 10px; /* Adiciona espaço entre os itens da lista */
+}
+
+.CaixaTexto {
+  font-size: 16px;
+  margin-bottom: 40px;
+  background-color: #ffffff;
+  padding: 10px 20px 25px;
+  border-radius: 10px;
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.teste li {
+  display: grid;
+}
+
+.CaixaTexto h3 {
+  font-size: 26px;
+}
+
+.CaixaTexto h2 {
+  font-size: 28px;
+}
+
+ul  {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  padding: 15px;
+  font-weight: 900;
+}
+/* 1 */
+/* 2 */
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.container ul {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  margin-right: 25px;
+}
+
+.nav ul li a {
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-size: 14px;
+  display: block;
+  text-decoration: none;
+}
+
+.Alinhar {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  font-weight: 900;
+  display: flex;
+}
+
+.Center {
+  text-align: center;
+}
+
+#imagem-logo {
+  width: 100px;
+  height: 100px;
+}
+
+#imagem-header {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+/*img {
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+}*/
+
+.SobreMIM  {
+  color: rgb(9, 255, 0);
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  padding: 15px;
+  font-weight: 400;
+}
+
+.btn {
+  background-color: #4f9cf9;
+  color: rgb(0, 0, 0);
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.btn2 {
+  background-color: #4f9cf9;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: inline-block;
 }
 
 h1,
@@ -38,7 +186,7 @@ a:hover {
 
 button {
   background-color: var(--cor-primaria);
-  color: #fff;
+  color: rgb(247, 0, 226);
   border: 1px solid var(--cor-borda);
   padding: 8px 16px;
   cursor: pointer;
@@ -61,10 +209,10 @@ td {
 
 /* Defina suas variáveis de cores aqui */
 :root {
-  --cor-fundo: #f6fcff; /* Fundo em cinza claro */
-  --cor-primaria: #597081; /* Preto para títulos e botões */
-  --cor-secundaria: #929292b4; /* Azul turquesa para detalhes */
-  --cor-borda: #f1dac4; /* Cinza escuro para bordas */
-  --cor-texto: #000000; /* Cinza médio para texto */
-  --cor-hover: #12121359; /* Preto mais escuro para hover */
+  --cor-fundo: #0400fd; /* Fundo em cinza claro */
+  --cor-primaria: #00ff22; /* Preto para títulos e botões */
+  --cor-secundaria: #ffe600; /* Azul turquesa para detalhes */
+  --cor-borda: #ff9100; /* Cinza escuro para bordas */
+  --cor-texto: #03ffff; /* Cinza médio para texto */
+  --cor-hover: #cc00ff; /* Preto mais escuro para hover */
 }
