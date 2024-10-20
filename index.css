@@ -13,9 +13,68 @@
     U+FE2E-FE2F;
 }*/
 
-/*@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap');
 
 /* Adicione suas outras definições de @font-face aqui */
+
+h1 {
+  width: 450px;
+  height: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  background-color: #ddd4d4;
+  padding: 10px 10px;
+  border-radius: 10px;
+  font-family: "Hepta Slab", serif;;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  color: #0b0d0fd0;
+}
+
+h2 {
+  font-family: "Hepta Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25px;
+  color: #1542d6;
+}
+
+h3 {
+  font-family: "Hepta Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 100 900;
+  font-style: normal;
+  font-size: 20px;
+  color: #1542d6;
+}
+
+h4{
+  font-family: "Hepta Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 100 900;
+  font-style: normal;
+  font-size: 15px;
+  color: #38363b;
+}
+
+p {
+  font-family: "Hepta Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+li {
+  font-family: "Hepta Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+}
 
 .grifado {
   background-color: #5b5d68bb;
@@ -26,39 +85,20 @@
 }
 
 body {
-  /*background-color: #0B1642;*/
-  font-family: "Hepta Slab", serif;
-  font-optical-sizing: auto;
-  font-weight: 100 900;
-  font-style: normal;
-  /*color: rgb(0, 0, 0);*/
-  /*font-family: "Hepta Slab", serif; /* Aplicação da fonte Inter */
-  background-image: url('./index.jpeg/ciencia-da-computacao-2.jpg');
+  /*background-image: url('./index.jpeg/ciencia-da-computacao-2.jpg');*/
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #3f4046;
 }
 
 .body2 {
   background-color: #0B1642;
-  padding: 50px 20px;
+  padding: 40px 1px;
   margin-bottom: 1px;
-}
-
-/*
-.CorFundo {
-  background-color: #5b5d68bb;
-  padding: 1px 1px;
-  margin-bottom: 1px;
-}
-
-.CorFundo2 {
-  background-color: #ffffff;
-  padding: 15px 20px;
   border-radius: 10px;
 }
-*/
 
 .EspacoPara li {
   margin-bottom: 10px; /* Adiciona espaço entre os itens da lista */
@@ -66,7 +106,6 @@ body {
 
 .CaixaTexto {
   font-weight: 500;
-  font-size: 16px;
   margin-bottom: 40px;
   background-color: #ffffff;
   padding: 10px 20px 25px;
@@ -79,14 +118,6 @@ body {
   display: grid;
 }
 
-.CaixaTexto h3 {
-  font-size: 26px;
-}
-
-.CaixaTexto h2 {
-  font-size: 28px;
-}
-
 ul  {
   display: flex;
   justify-content: space-between;
@@ -95,25 +126,12 @@ ul  {
   padding: 15px;
   font-weight: 900;
 }
-/* 1 */
-/* 2 */
 
 .container {
   max-width: 1450px;
   margin:  0 auto;
   padding: 0 5%;
 }
-
-.container h1 {
-  font-size: 28px;
-  text-underline-offset: 1px;
-}
-
-/*.container ul {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 5%;
-}*/
 
 .nav {
   display: flex;
@@ -168,24 +186,6 @@ ul  {
   border: 3px solid white;
 }
 
-/*img {
-  text-align: center;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
-}*/
-
-.SobreMIM  {
-  color: rgb(9, 255, 0);
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  align-items: center;
-  padding: 15px;
-  font-weight: 400;
-}
-
 .btn {
   background-color: #4f9cf9;
   color: rgb(0, 0, 0);
@@ -200,12 +200,6 @@ ul  {
   padding: 10px 15px;
   border-radius: 8px;
   display: inline-block;
-}
-
-h1,
-h2,
-h3 {
-  color: var(--cor-primaria);
 }
 
 a {
@@ -246,6 +240,6 @@ td {
   --cor-primaria: #00ff22; /* Preto para títulos e botões */
   --cor-secundaria: #ffe600; /* Azul turquesa para detalhes */
   --cor-borda: #ff9100; /* Cinza escuro para bordas */
-  --cor-texto: #03ffff; /* Cinza médio para texto */
-  --cor-hover: #cc00ff; /* Preto mais escuro para hover */
+  --cor-texto: #e70d0d; /* Cinza médio para texto */
+  --cor-hover: #ffffff; /* Preto mais escuro para hover */
 }
