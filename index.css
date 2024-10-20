@@ -15,16 +15,32 @@
 
 /* Adicione suas outras definições de @font-face aqui */
 
-/* 1 */
+.grifado {
+  text-decoration: underline; /* Adiciona uma linha abaixo do texto */
+  text-decoration-thickness: 1px; /* Ajuste a espessura da linha conforme necessário */
+}
+
 body {
-  background-color: #0B1642;
+  /*background-color: #0B1642;*/
   color: rgb(0, 0, 0);
   font-family: "Inter", Arial, sans-serif; /* Aplicação da fonte Inter */
-  background-image: url('ciencia-da-computacao-2.jpg');
+  background-image: url('./index.jpeg/ciencia-da-computacao-2.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.body2 {
+  background-color: #0B1642;
+  padding: 50px 20px;
+  margin-bottom: 1px;
+}
+
+.CorFundo {
+  background-color: #5b5d68bb;
+  padding: 1px 1px;
+  margin-bottom: 1px;
 }
 
 .CorFundo {
@@ -38,6 +54,7 @@ body {
 }
 
 .CaixaTexto {
+  font-weight: 500;
   font-size: 16px;
   margin-bottom: 40px;
   background-color: #ffffff;
