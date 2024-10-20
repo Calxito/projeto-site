@@ -1,8 +1,8 @@
 /* Importação da fonte Inter */
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");*/
 
 /* Definições de @font-face */
-@font-face {
+/*@font-face {
   font-family: "Inter";
   font-style: italic;
   font-weight: 100 900;
@@ -11,19 +11,28 @@
     format("woff2");
   unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F,
     U+FE2E-FE2F;
-}
+}*/
+
+/*@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap');
 
 /* Adicione suas outras definições de @font-face aqui */
 
 .grifado {
+  background-color: #5b5d68bb;
   text-decoration: underline; /* Adiciona uma linha abaixo do texto */
   text-decoration-thickness: 1px; /* Ajuste a espessura da linha conforme necessário */
+  padding: 1px 2px;
+  display: inline-block;
 }
 
 body {
   /*background-color: #0B1642;*/
-  color: rgb(0, 0, 0);
-  font-family: "Inter", Arial, sans-serif; /* Aplicação da fonte Inter */
+  font-family: "Hepta Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 100 900;
+  font-style: normal;
+  /*color: rgb(0, 0, 0);*/
+  /*font-family: "Hepta Slab", serif; /* Aplicação da fonte Inter */
   background-image: url('./index.jpeg/ciencia-da-computacao-2.jpg');
   background-size: cover;
   background-attachment: fixed;
@@ -37,17 +46,19 @@ body {
   margin-bottom: 1px;
 }
 
+/*
 .CorFundo {
   background-color: #5b5d68bb;
   padding: 1px 1px;
   margin-bottom: 1px;
 }
 
-.CorFundo {
+.CorFundo2 {
   background-color: #ffffff;
   padding: 15px 20px;
   border-radius: 10px;
 }
+*/
 
 .EspacoPara li {
   margin-bottom: 10px; /* Adiciona espaço entre os itens da lista */
@@ -91,6 +102,11 @@ ul  {
   max-width: 1450px;
   margin:  0 auto;
   padding: 0 5%;
+}
+
+.container h1 {
+  font-size: 28px;
+  text-underline-offset: 1px;
 }
 
 /*.container ul {
