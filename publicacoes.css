@@ -1,25 +1,13 @@
 /* Importação da fonte Inter */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-/* Definições de @font-face */
-@font-face {
-  font-family: "Inter";
-  font-style: italic;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCm3FwrK3iLTcvnUwkT9nA2.woff2)
-    format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F,
-    U+FE2E-FE2F;
-}
-
 /* Defina suas variáveis de cores aqui */
 :root {
-  --cor-fundo: #161b33; /* Fundo em azul escuro */
+  --cor-fundo: #1a1f41; /* Fundo em azul escuro */
   --cor-fundo-claro: #2a3042; /* Fundo dos blocos de texto */
-  --cor-primaria: #597081; /* Preto para títulos e botões */
+  --cor-primaria: #f4faff; /* Preto para títulos e botões */
   --cor-secundaria: #929292b4; /* Azul turquesa para detalhes */
-  --cor-borda: #f1dac4; /* Cinza escuro para bordas */
+  --cor-borda: #f0f0f0; /* Cinza escuro para bordas */
   --cor-texto: #fffefe; /* Cor do texto */
   --cor-hover: #12121359; /* Preto mais escuro para hover */
 }
@@ -47,15 +35,8 @@ a:hover {
   color: var(--cor-hover);
 }
 
-/* Botões */
-button {
-  background-color: var(--cor-primaria);
-  color: #fff;
-  border: 1px solid var(--cor-borda);
-  padding: 8px 16px;
-  cursor: pointer;
-  margin-top: 16px;
-  border-radius: 5px;
+button:last-child {
+  margin-right: 0; /* Remove o espaçamento do último botão */
 }
 
 button:hover {
@@ -66,7 +47,10 @@ button:hover {
 table,
 th,
 td {
+  padding: 30px; /* Espaçamento interno */
+  border-radius: 10px; /* Deixa as bordas redondas */
   border: 1px solid var(--cor-borda);
+  text-align: center; /* Centraliza o texto dentro da tabela */
 }
 
 td {
@@ -99,6 +83,8 @@ td {
   margin-bottom: 20px; /* Espaçamento entre os tópicos */
   background-color: var(--cor-fundo-claro); /* Cor de fundo para os tópicos */
   color: var(--cor-texto); /* Cor do texto */
+  margin: 2cm; /* Distância da borda do site */
+  border-radius: 10px; /* Borda arredondada */
 }
 
 /* Estilo de texto com quadrados ao redor dos blocos de texto */
@@ -110,4 +96,11 @@ td {
     --cor-fundo-claro
   ); /* Cor de fundo dos blocos de texto */
   color: var(--cor-texto); /* Cor do texto dentro do quadrado */
+  margin: 2cm; /* Distância da borda do site */
+  border-radius: 10px; /* Borda arredondada */
+}
+
+/* Nova classe para centralizar as palavras acima da tabela */
+.center-text {
+  text-align: center;
 }
