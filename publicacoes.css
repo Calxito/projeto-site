@@ -2,16 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 /* Defina suas variáveis de cores aqui */
+
 :root {
-  --cor-fundo: #1a1f41; /* Fundo em azul escuro */
-  --cor-fundo-claro: #2a3042; /* Fundo dos blocos de texto */
+  --cor-fundo: #0b1642; /* Fundo em azul escuro */
+  --cor-fundo-claro: #2f323f; /* Fundo dos blocos de texto */
   --cor-primaria: #f4faff; /* Preto para títulos e botões */
   --cor-secundaria: #929292b4; /* Azul turquesa para detalhes */
   --cor-borda: #f0f0f0; /* Cinza escuro para bordas */
   --cor-texto: #fffefe; /* Cor do texto */
   --cor-hover: #12121359; /* Preto mais escuro para hover */
 }
-
 /* Estilo do body */
 body {
   background-color: var(--cor-fundo);
@@ -27,7 +27,7 @@ h3 {
 }
 
 a {
-  color: var(--cor-secundaria);
+  color: var(--cor-primaria);
   text-decoration: none;
 }
 
@@ -54,7 +54,7 @@ td {
 }
 
 td {
-  background-color: var(--cor-fundo);
+  background-color: var(--cor-fundo-claro);
   padding: 8px;
 }
 

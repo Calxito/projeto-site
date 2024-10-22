@@ -1,18 +1,6 @@
 /* Importação da fonte Inter */
 /*@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");*/
 
-/* Definições de @font-face */
-/*@font-face {
-  font-family: "Inter";
-  font-style: italic;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCm3FwrK3iLTcvnUwkT9nA2.woff2)
-    format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F,
-    U+FE2E-FE2F;
-}*/
-
 @import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap');
 
 /* Adicione suas outras definições de @font-face aqui */
@@ -102,10 +90,9 @@ body {
   margin-bottom: 1px;
   border-radius: 10px;
   width: 80%;
-  height: 4025px;
+  max-width: 1600px;
+  height: auto;
   position: relative;
-  top: 50px;
-  left: 100px;
 }
 
 .EspacoPara li {
