@@ -238,3 +238,10 @@ td {
   --cor-texto: #e70d0d; /* Cinza médio para texto */
   --cor-hover: #ffffff; /* Preto mais escuro para hover */
 }
+
+.cookies-msg{
+  display: none;
+}
+.cookies-msg.mostrar{
+  display: block;
+}
