@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap");
 
 * {
-  font-family: 'Hepta Slab', serif;
+  font-family: "Hepta Slab", serif;
   text-decoration: none;
   outline: none;
 }
@@ -126,27 +126,24 @@ nav ul li a:hover::after {
   color: #333;
 }
 
-
 .cookies-btn button {
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
-  background-color: #4CAF50;
+  background-color: #373841;
   border: none;
   cursor: pointer;
   border-radius: 5px;
 }
 
 .cookies-btn button:hover {
-  background-color: #45a049;
+  background-color: #373841;
 }
-
 
 a {
-  color: #1331d6; 
+  color: #1331d6;
 }
 
-
 a:hover {
-  color: #373841; 
+  color: #373841;
 }
