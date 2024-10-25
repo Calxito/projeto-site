@@ -1,0 +1,118 @@
+/* Importação da fonte Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Defina suas variáveis de cores aqui */
+:root {
+  --cor-fundo: #0b1642; /* Fundo em vermelho escuro */
+  --cor-fundo-claro: #2f323f; /* Fundo dos blocos de texto */
+  --cor-primaria: #f4faff; /* Vermelho vivo para títulos e links */
+  --cor-secundaria: #929292b4; /* Vermelho mais escuro para detalhes */
+  --cor-borda: #f0f0f0; /* Borda vermelha */
+  --cor-texto: #fffefe; /* Cor principal do texto */
+  --cor-hover: #12121359; /* Preto para hover */
+}
+
+/* Estilo do body */
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: "Inter", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--cor-hover);
+}
+
+button:hover {
+  background-color: var(--cor-hover);
+}
+
+/* Centralização do conteúdo principal */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0cm;
+  width: 100%;
+}
+
+/* Estilo das Caixas de Texto PhD e outros blocos de informação */
+.CaixaTexto,
+.topic-box {
+  border: 2.5px solid var(--cor-borda);
+  padding: 26px;
+  background-color: var(--cor-fundo-claro);
+  color: var(--cor-texto);
+  border-radius: 18px;
+  width: 150%;
+  max-width: 900px; /* Limita a largura máxima das caixas */
+  margin-bottom: 1cm;
+}
+
+/* Centralizando o conteúdo dentro das caixas */
+.CaixaTexto p,
+.topic-box p {
+  text-align: justify;
+}
+
+td {
+  background-color: var(--cor-fundo-claro);
+}
+
+/* Estilo para listas */
+*ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+li a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+}
+
+li a:hover {
+  color: var(--cor-hover);
+}
+
+li img {
+  width: 34px;
+  height: 33px;
+  vertical-align: middle;
+}
+
+/* Estilo para links e navegação */
+p a {
+  color: var(--cor-ho);
+  margin-right: 10px;
+}
+
+p a:hover {
+  color: var(--cor-hover);
+}
+
+hr {
+  border: 1.5px solid var(--cor-borda);
+}
+
+/* Centralização do texto */
+.center-text {
+  text-align: center;
+}
+.grifado {
+  background-color: #5b5d68bb;
+  text-decoration: underline; /* Adiciona uma linha abaixo do texto */
+  text-decoration-thickness: 1px; /* Ajuste a espessura da linha conforme necessário */
+  padding: 3px 5px;
+  display: inline-block;
+}
