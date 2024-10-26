@@ -1,10 +1,89 @@
-@import url("https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap');
 
 * {
   font-family: "Hepta Slab", serif;
   text-decoration: none;
   outline: none;
 }
+
+/* Ajustes importados pelo Luiz começam aqui */
+
+.cabecalhoBTN li{
+  display: flex;
+  align-items: center;
+}
+
+.cabecalho {
+  margin-right: 20px;
+}
+
+h1 { /* Ajusta a Escrita dentro do Balao */
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  color: #0b0d0fd0;
+}
+
+h2 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
+  color: #1542d6;
+}
+
+h3 {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 26px;
+  color: #1542d6;
+}
+
+h4{
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  color: #38363b;
+}
+
+p {
+  font-style: normal;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  flex-direction: column;
+  display: block;
+}
+
+li {
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.grifado {
+  background-color: #5b5d68bb;
+  text-decoration: underline; /* Adiciona uma linha abaixo do texto */
+  text-decoration-thickness: 1px; /* Ajuste a espessura da linha conforme necessário */
+  padding: 1px 2px;
+  display: inline-block;
+}
+
+.sobre, 
+.formacao-text,
+.pesquisas-text,
+.publicacoes-text,
+.doutorado-text,
+.atividades-text {
+  margin-bottom: 40px;
+  max-width: 1400px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Ajustes importados pelo Luiz acabam aqui */
 
 /* Cor de fundo do site */
 body {
@@ -79,13 +158,14 @@ nav ul li a:hover::after {
 }
 
 /* Botões de ação */
-.btn {
+.btn{
   background-color: #373841; /* Cor primária: botões de ação */
   color: white; /* Texto branco */
   padding: 15px 20px;
   border-radius: 10px;
   display: inline-block;
   border: 1px solid #0b1642; /* Cor da borda */
+
 }
 
 .btn:hover {
