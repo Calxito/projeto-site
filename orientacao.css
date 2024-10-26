@@ -53,12 +53,12 @@ button:hover {
 .CaixaTexto,
 .topic-box {
   border: 2.5px solid var(--cor-borda);
-  padding: 26px;
+  padding: 45px;
   background-color: var(--cor-fundo-claro);
   color: var(--cor-texto);
   border-radius: 18px;
   width: 150%;
-  max-width: 900px; /* Limita a largura máxima das caixas */
+  max-width: 1600px; /* Limita a largura máxima das caixas */
   margin-bottom: 1cm;
 }
 
