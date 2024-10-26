@@ -58,7 +58,7 @@ button:hover {
   color: var(--cor-texto);
   border-radius: 18px;
   width: 150%;
-  max-width: 1600px; /* Limita a largura máxima das caixas */
+  max-width: 1000px; /* Limita a largura máxima das caixas */
   margin-bottom: 1cm;
 }
 
