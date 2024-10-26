@@ -1,4 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap");
+
+/* Adicionando a paleta de cores */
+:root {
+  --cor-fundo: #575963; /* Fundo em laranja claro */
+  --cor-primaria: #e2bd84; /* Cor primária clara */
+  --cor-secundaria: #a5960bdc; /* Cor Links interativos laranja */
+  --cor-borda: #ffb74d; /* Cor para caixa de fundo laranja */
+  --cor-texto: #1a2e88e0; /* Laranja escuro para texto */
+  --cor-hover: #1a2e88e0; /* Laranja mais escuro para hover */
+}
 
 * {
   font-family: "Hepta Slab", serif;
@@ -7,8 +17,7 @@
 }
 
 /* Ajustes importados pelo Luiz começam aqui */
-
-.cabecalhoBTN li{
+.cabecalhoBTN li {
   display: flex;
   align-items: center;
   padding-top: 15px;
@@ -18,33 +27,34 @@
   margin-right: 20px;
 }
 
-h1 { /* Ajusta a Escrita dentro do Balao */
+h1 {
+  /* Ajusta a Escrita dentro do Balao */
   letter-spacing: 2px;
   font-weight: 700;
   font-style: normal;
   font-size: 32px;
-  color: #0b0d0fd0;
+  color: var(--cor-texto);
 }
 
 h2 {
   font-weight: 700;
   font-style: normal;
   font-size: 26px;
-  color: #1542d6;
+  color: var(--cor-hover);
 }
 
 h3 {
   font-weight: 600;
   font-style: normal;
   font-size: 26px;
-  color: #1542d6;
+  color: var(--cor-hover);
 }
 
-h4{
+h4 {
   font-weight: 600;
   font-style: normal;
   font-size: 20px;
-  color: #38363b;
+  color: #38363b; /* Mantive essa cor pois não foi especificada na nova paleta */
 }
 
 p {
@@ -64,14 +74,14 @@ li {
 }
 
 .grifado {
-  background-color: #5b5d68bb;
+  background-color: #5b5d68bb; /* Mantive essa cor pois não foi especificada na nova paleta */
   text-decoration: underline; /* Adiciona uma linha abaixo do texto */
   text-decoration-thickness: 1px; /* Ajuste a espessura da linha conforme necessário */
   padding: 1px 2px;
   display: inline-block;
 }
 
-.sobre, 
+.sobre,
 .formacao-text,
 .pesquisas-text,
 .publicacoes-text,
@@ -88,7 +98,7 @@ li {
 
 /* Cor de fundo do site */
 body {
-  background-color: #2f323f; /* Fundo principal */
+  background-color: var(--cor-fundo); /* Fundo principal */
 }
 
 nav {
@@ -96,7 +106,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 10px 30px;
-  background-color: #2f323f; /* Fundo do cabeçalho */
+  background-color: var(--cor-fundo); /* Fundo do cabeçalho */
 }
 
 nav ul {
@@ -122,7 +132,9 @@ nav ul li a {
 /* Links interativos com cor secundária */
 nav ul li a:not(.btn)::after {
   content: "";
-  background-color: #1331d6; /* Cor secundária: links interativos */
+  background-color: var(
+    --cor-secundaria
+  ); /* Cor secundária: links interativos */
   height: 3px;
   width: 0%;
   display: block;
@@ -148,16 +160,17 @@ nav ul li a:hover::after {
 
 .banner .banner-text h1 {
   font-size: 96px;
-  color: white;
+  color: #ffffff; /* Mantive essa cor pois não foi especificada na nova paleta */
 }
 
 .banner .banner-text p {
   font-size: 20px;
-  color: #ffffffb7;
+  color: #ffffffb7; /* Mantive essa cor pois não foi especificada na nova paleta */
   font-weight: lighter;
   margin: 18px 0;
 }
 
+<<<<<<< HEAD
 /* Botões de ação 
 .btn{
   background-color: #373841; /* Cor primária: botões de ação 
@@ -265,14 +278,28 @@ a:hover {
 
 .btn_cont:hover::after{
   top: 0;
+=======
+/* Botões de ação */
+.btn {
+  background-color: var(--cor-primaria); /* Cor primária: botões de ação */
+  color: white; /* Texto branco */
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  border: 1px solid #ffffff38; /* Cor da borda */
+}
+
+.btn:hover {
+  background-color: #ffffff38; /* Cor hover dos botões */
+>>>>>>> afdb9b2178b209a6ed702a2c4af64db5b0df65a9
 }
 
 @keyframes animate-outline {
   from {
-    outline: 0px solid #4f9bf98a;
+    outline: 0px solid #4f9bf98a; /* Mantive essa cor pois não foi especificada na nova paleta */
   }
   to {
-    outline: 15px solid #4f9bf98a;
+    outline: 15px solid #4f9bf98a; /* Mantive essa cor pois não foi especificada na nova paleta */
   }
 }
 
@@ -283,7 +310,7 @@ a:hover {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #f1f1f1;
+  background-color: #d8d5c7; /* Mantive essa cor pois não foi especificada na nova paleta */
   padding: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
@@ -298,19 +325,32 @@ a:hover {
 .cookies-text p {
   margin: 0;
   font-size: 16px;
-  color: #333;
+  color: #333; /* Mantive essa cor pois não foi especificada na nova paleta */
 }
 
 .cookies-btn button {
   padding: 10px 20px;
   font-size: 14px;
   color: #fff;
-  background-color: #373841;
+  background-color: var(--cor-primaria);
   border: none;
   cursor: pointer;
   border-radius: 5px;
 }
 
 .cookies-btn button:hover {
+<<<<<<< HEAD
   background-color: #373841;
 }
+=======
+  background-color: #ffffff38;
+}
+
+a {
+  color: var(--cor-secundaria);
+}
+
+a:hover {
+  color: #ffffff;
+}
+>>>>>>> afdb9b2178b209a6ed702a2c4af64db5b0df65a9
