@@ -4,9 +4,56 @@
   font-family: "Hepta Slab", serif;
   text-decoration: none;
   outline: none;
+  margin: 0%;
+  padding: 0%;
 }
 
 /* Ajustes importados pelo Luiz começam aqui */
+
+/* AJUSTES NECESSARIOS */
+
+body {
+  background-color: var(--cor-fundo); /* Fundo principal */
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.body2{
+  background-color: #36373aec;
+  border-radius: 10px;
+  padding-top: 0.5cm;
+  padding-bottom: 0.5cm;
+  padding-left: 0.5cm;
+  padding-right: 0.5cm;
+  max-width: 1400px;
+  min-width: 500px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.container2{
+  display: flex;
+  align-items: center;
+}
+
+/* AJUSTES NECESSARIOS */
+
+.cabecalhoFixo nav{
+  position: fixed;
+  box-sizing: border-box;
+  background-color: rgb(45, 45, 51);
+  padding-top: 0.8cm;
+  padding-bottom: 0.8cm;
+  padding-left: 0.5cm;
+  padding-right: 0.5cm;
+  width: 100%;
+  z-index: +2;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
 
 .cabecalhoBTN li {
   display: flex;
@@ -28,21 +75,21 @@ h1 {
   font-weight: 700;
   font-style: normal;
   font-size: 32px;
-  color: #0b0d0fd0;
+  color: var(--cor-texto);
 }
 
 h2 {
   font-weight: 700;
   font-style: normal;
   font-size: 26px;
-  color: #1542d6;
+  color: var(--cor-hover);
 }
 
 h3 {
   font-weight: 600;
   font-style: normal;
   font-size: 26px;
-  color: #1542d6;
+  color: var(--cor-hover);
 }
 
 h4 {
@@ -83,30 +130,21 @@ li {
 .publicacoes-text,
 .doutorado-text,
 .atividades-text {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   max-width: 1400px;
+  min-width: 500px;
   background-color: #ffffff;
   padding: 15px;
   border-radius: 10px;
 }
 
-/*
-.sobre,
-.formacao,
-.pesquisas,
-.publicacoes,
-.doutorado,
-.atividades {
-  display: inline-block;
-  justify-content: center;
-}
-*/
-
 /* Ajustes importados pelo Luiz acabam aqui */
 
-/* Cor de fundo do site */
-body {
-  background-color: #2f323f; /* Fundo principal */
+/* FUNCIONAMENTO CORRETO - NAO ALTERAR */
+
+.rodape {
+  margin: 0.2cm;
 }
 
 nav {
@@ -140,7 +178,7 @@ nav ul li a {
 /* Links interativos com cor secundária */
 nav ul li a:not(.btn)::after {
   content: "";
-  background-color: #1331d6; /* Cor secundária: links interativos */
+  background-color: var(--cor-secundaria); /* Cor secundária: links interativos */
   height: 3px;
   width: 0%;
   display: block;
@@ -154,12 +192,13 @@ nav ul li a:hover::after {
 
 /* Estilo do banner */
 .banner {
+  margin-top: 7cm;
+  margin-bottom: 2cm;
   display: flex;
   justify-content: center;
 }
 
 .banner .banner-text {
-  margin: 150px;
   text-align: center;
   padding: 0 90px;
 }
@@ -178,17 +217,17 @@ nav ul li a:hover::after {
 
 /* Botões de ação */
 .btn {
-  background-color: #373841; /* Cor primária: botões de ação */
+  background-color: var(--cor-primaria); /* Cor primária: botões de ação */
   color: white; /* Texto branco */
   padding: 15px 20px;
   border-radius: 10px;
   display: inline-block;
-  border: 1px solid #0b1642; /* Cor da borda */
+  border: 1px var(--cor-borda); /* Cor da borda */
   transition: 1s;
 }
 
 .btn:hover {
-  background-color: #3580db; /* Cor hover dos botões */
+  background-color: var(--cor-hover); /* Cor hover dos botões */
 }
 
 a {
@@ -231,6 +270,7 @@ a:hover {
 }
 
 .btn_cont {
+  margin-top: 2cm;
   border-radius: 15px;
   border: 3px solid rgb(199, 199, 199);
   color: rgb(37, 235, 225);
@@ -329,14 +369,14 @@ a:hover {
   padding: 10px 20px;
   font-size: 14px;
   color: #fff;
-  background-color: #373841;
+  background-color: var(--cor-primaria);
   border: none;
   cursor: pointer;
   border-radius: 5px;
 }
 
 .cookies-btn button:hover {
-  background-color: #373841;
+  background-color: var(--cor-hover);
 }
 
 :root {
@@ -348,12 +388,4 @@ a:hover {
   --cor-hover: #1a2e88e0; /* Laranja mais escuro para hover */
 }
 
-/* Centralização do texto */
-/*.CaixaTexto, .banner-text h1, .body2 {
-  text-align: center;
-  margin: 0 auto; /* Centraliza horizontalmente 
-
-  AI ZE FOI ESSE QUE EU USEI PRA CENTRAIZAR O TEXTO 
-  
-}*/
-/*OPAA*/
+/* FUNCIONAMENTO CORRETO - NAO ALTERAR */
