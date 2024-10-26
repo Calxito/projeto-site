@@ -170,7 +170,6 @@ nav ul li a:hover::after {
   margin: 18px 0;
 }
 
-<<<<<<< HEAD
 /* Botões de ação 
 .btn{
   background-color: #373841; /* Cor primária: botões de ação 
@@ -197,7 +196,7 @@ a {
 }
 
 a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -238,25 +237,25 @@ a:hover {
   position: relative;
   overflow: hidden;
   background: transparent;
-  transition: .3s;
+  transition: 0.3s;
   z-index: 1;
 }
 
-.btn_cont::before{
+.btn_cont::before {
   background-color: rgb(44, 69, 92);
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
-  opacity: .6;
+  opacity: 0.6;
   position: absolute;
   top: -100%;
   left: 0;
   z-index: -1;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.btn_cont::after{
-  content: '';
+.btn_cont::after {
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -264,85 +263,81 @@ a:hover {
   top: -100%;
   left: 0;
   z-index: -1;
-  transition: .3s;
+  transition: 0.3s;
   transition-delay: 0.3s;
 }
 
-.btn_cont:hover{
+.btn_cont:hover {
   color: #3fd679;
 }
 
-.btn_cont:hover::before{
+.btn_cont:hover::before {
   top: 0;
 }
 
-.btn_cont:hover::after{
+.btn_cont:hover::after {
   top: 0;
-=======
-/* Botões de ação */
-.btn {
-  background-color: var(--cor-primaria); /* Cor primária: botões de ação */
-  color: white; /* Texto branco */
-  padding: 15px 20px;
-  border-radius: 10px;
-  display: inline-block;
-  border: 1px solid #ffffff38; /* Cor da borda */
-}
-
-.btn:hover {
-  background-color: #ffffff38; /* Cor hover dos botões */
->>>>>>> afdb9b2178b209a6ed702a2c4af64db5b0df65a9
-}
-
-@keyframes animate-outline {
-  from {
-    outline: 0px solid #4f9bf98a; /* Mantive essa cor pois não foi especificada na nova paleta */
+  /* Botões de ação */
+  .btn {
+    background-color: var(--cor-primaria); /* Cor primária: botões de ação */
+    color: white; /* Texto branco */
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    border: 1px solid #ffffff38; /* Cor da borda */
   }
-  to {
-    outline: 15px solid #4f9bf98a; /* Mantive essa cor pois não foi especificada na nova paleta */
+
+  .btn:hover {
+    background-color: #ffffff38; /* Cor hover dos botões */
   }
-}
 
-/* Mensagem de cookies */
-.cookies-msg {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #d8d5c7; /* Mantive essa cor pois não foi especificada na nova paleta */
-  padding: 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-}
+  @keyframes animate-outline {
+    from {
+      outline: 0px solid #4f9bf98a; /* Mantive essa cor pois não foi especificada na nova paleta */
+    }
+    to {
+      outline: 15px solid #4f9bf98a; /* Mantive essa cor pois não foi especificada na nova paleta */
+    }
+  }
 
-.cookies-msg.mostrar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  /* Mensagem de cookies */
+  .cookies-msg {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #d8d5c7; /* Mantive essa cor pois não foi especificada na nova paleta */
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
 
-.cookies-text p {
-  margin: 0;
-  font-size: 16px;
-  color: #333; /* Mantive essa cor pois não foi especificada na nova paleta */
-}
+  .cookies-msg.mostrar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.cookies-btn button {
-  padding: 10px 20px;
-  font-size: 14px;
-  color: #fff;
-  background-color: var(--cor-primaria);
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
+  .cookies-text p {
+    margin: 0;
+    font-size: 16px;
+    color: #333; /* Mantive essa cor pois não foi especificada na nova paleta */
+  }
 
-.cookies-btn button:hover {
-<<<<<<< HEAD
-  background-color: #373841;
-}
-=======
+  .cookies-btn button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: var(--cor-primaria);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .cookies-btn button:hover {
+    background-color: #373841;
+  }
   background-color: #ffffff38;
 }
 
@@ -353,4 +348,12 @@ a {
 a:hover {
   color: #ffffff;
 }
->>>>>>> afdb9b2178b209a6ed702a2c4af64db5b0df65a9
+
+/* Centralização do texto */
+/*.CaixaTexto, .banner-text h1, .body2 {
+  text-align: center;
+  margin: 0 auto; /* Centraliza horizontalmente 
+
+  AI ZE FOI ESSE QUE EU USEI PRA CENTRAIZAR O TEXTO 
+  
+}*/
