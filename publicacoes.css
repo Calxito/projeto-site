@@ -1,17 +1,23 @@
 /* Importação da fonte Inter */
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap");
 
+* {
+  font-family: "Hepta Slab", serif;
+  text-decoration: none;
+  outline: none;
+}
 /* Defina suas variáveis de cores aqui */
 
 :root {
-  --cor-fundo: #0b1642; /* Fundo em azul escuro */
-  --cor-fundo-claro: #2f323f; /* Fundo dos blocos de texto */
-  --cor-primaria: #f4faff; /* Preto para títulos e botões */
+  --cor-fundo: #ebeef1; /* Fundo em azul escuro */
+  --cor-fundo-claro: #d9e2ef; /* Fundo dos blocos de texto */
+  --cor-primaria: #a5960bdc; /* Preto para títulos e botões */
   --cor-secundaria: #929292b4; /* Azul turquesa para detalhes */
-  --cor-borda: #f0f0f0; /* Cinza escuro para bordas */
-  --cor-texto: #fffefe; /* Cor do texto */
+  --cor-borda: #575963; /* Cinza escuro para bordas */
+  --cor-texto: #181515; /* Cor do texto */
   --cor-hover: #12121359; /* Preto mais escuro para hover */
 }
+
 /* Estilo do body */
 body {
   background-color: var(--cor-fundo);
@@ -47,9 +53,9 @@ button:hover {
 table,
 th,
 td {
-  padding: 30px; /* Espaçamento interno */
-  border-radius: 10px; /* Deixa as bordas redondas */
-  border: 1px solid var(--cor-borda);
+  padding: 25px; /* Espaçamento interno */
+  border-radius: 8px; /* Deixa as bordas redondas */
+  border: 1.5px solid var(--cor-borda);
   text-align: center; /* Centraliza o texto dentro da tabela */
 }
 
@@ -78,7 +84,7 @@ td {
 
 /* Estilo de cada tópico */
 .topic-box {
-  border: 2px solid var(--cor-borda); /* Borda ao redor dos tópicos */
+  border: 1.5px solid var(--cor-borda); /* Borda ao redor dos tópicos */
   padding: 16px; /* Espaçamento interno */
   margin-bottom: 20px; /* Espaçamento entre os tópicos */
   background-color: var(--cor-fundo-claro); /* Cor de fundo para os tópicos */
@@ -103,4 +109,62 @@ td {
 /* Nova classe para centralizar as palavras acima da tabela */
 .center-text {
   text-align: center;
+}
+.table-custom {
+  background-color: #9cb0ccd7; /* Cor de fundo da tabela */
+}
+
+.table-custom th,
+.table-custom td {
+  border: 1.5px solid var(--cor-borda); /* Cor da borda */
+  padding: 10px; /* Ajuste do espaçamento interno das células */
+}
+
+h1 {
+  /* Ajusta a Escrita dentro do Balao */
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  color: #0b0d0fd0;
+}
+
+h2 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
+  color: #1542d6;
+}
+
+h3 {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 26px;
+  color: #1542d6;
+}
+
+h4 {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  color: #38363b;
+}
+
+p {
+  font-style: normal;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  flex-direction: column;
+  display: block;
+}
+
+li {
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+}
+.topic-box li {
+  margin-bottom: 20px; /* Ajuste o valor conforme necessário */
 }
