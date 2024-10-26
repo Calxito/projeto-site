@@ -11,6 +11,7 @@
 .cabecalhoBTN li{
   display: flex;
   align-items: center;
+  padding-top: 15px;
 }
 
 .cabecalho {
@@ -157,19 +158,113 @@ nav ul li a:hover::after {
   margin: 18px 0;
 }
 
-/* Botões de ação */
+/* Botões de ação 
 .btn{
-  background-color: #373841; /* Cor primária: botões de ação */
-  color: white; /* Texto branco */
+  background-color: #373841; /* Cor primária: botões de ação 
+  color: white; /* Texto branco 
   padding: 15px 20px;
   border-radius: 10px;
   display: inline-block;
-  border: 1px solid #0b1642; /* Cor da borda */
+  border: 1px solid #0b1642; /* Cor da borda 
 
 }
 
 .btn:hover {
-  background-color: #3580db; /* Cor hover dos botões */
+  background-color: #3580db; /* Cor hover dos botões 
+}
+
+*/
+
+a {
+  color: #1331d6;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 1px;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #1331d6;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+a:hover {
+  color: #0f0785;
+}
+
+.btn {
+  padding: 10px 15px;
+  border-radius: 15px;
+  display: inline-block;
+  border: 3px solid rgb(199, 199, 199);
+  font-size: 22px;
+  position: relative;
+}
+
+.btn_cont {
+  border-radius: 15px;
+  border: 3px solid rgb(199, 199, 199);
+  color: rgb(37, 235, 225);
+  font-size: 22px;
+  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  transition: .3s;
+  z-index: 1;
+}
+
+.btn_cont::before{
+  background-color: rgb(44, 69, 92);
+  content: '';
+  width: 100%;
+  height: 100%;
+  opacity: .6;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+}
+
+.btn_cont::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgb(44, 69, 92);
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+  transition-delay: 0.3s;
+}
+
+.btn_cont:hover{
+  color: #3fd679;
+}
+
+.btn_cont:hover::before{
+  top: 0;
+}
+
+.btn_cont:hover::after{
+  top: 0;
 }
 
 @keyframes animate-outline {
@@ -218,12 +313,4 @@ nav ul li a:hover::after {
 
 .cookies-btn button:hover {
   background-color: #373841;
-}
-
-a {
-  color: #1331d6;
-}
-
-a:hover {
-  color: #373841;
 }
