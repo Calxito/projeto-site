@@ -8,8 +8,6 @@
 
 /* Ajustes importados pelo Luiz começam aqui */
 
-
-
 .cabecalhoBTN li{
   display: flex;
   align-items: center;
@@ -339,3 +337,21 @@ a:hover {
 .cookies-btn button:hover {
   background-color: #373841;
 }
+
+:root {
+  --cor-fundo: #575963; /* Fundo em laranja claro */
+  --cor-primaria: #e2bd84; /* Cor primária clara */
+  --cor-secundaria: #a5960bdc; /* Cor Links interativos laranja */
+  --cor-borda: #ffb74d; /* Cor para caixa de fundo laranja */
+  --cor-texto: #1a2e88e0; /* Laranja escuro para texto */
+  --cor-hover: #1a2e88e0; /* Laranja mais escuro para hover */
+}
+
+/* Centralização do texto */
+/*.CaixaTexto, .banner-text h1, .body2 {
+  text-align: center;
+  margin: 0 auto; /* Centraliza horizontalmente 
+
+  AI ZE FOI ESSE QUE EU USEI PRA CENTRAIZAR O TEXTO 
+  
+}*/
