@@ -75,6 +75,7 @@ li {
   text-decoration-thickness: 1px; /* Ajuste a espessura da linha conforme necessário */
   padding: 1px 2px;
   display: inline-block;
+  font-size: 12px;
 }
 
 .sobre-mim, 
