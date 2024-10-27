@@ -14,7 +14,7 @@
 
 nav {
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
   padding: 10px 30px;
   background-color: #2f323f; /* Fundo do cabeçalho */
 }
@@ -45,7 +45,9 @@ nav ul li a {
 /* Links interativos com cor secundária */
 nav ul li a:not(.btn)::after {
   content: "";
-  background-color: var(--cor-secundaria); /* Cor secundária: links interativos */
+  background-color: var(
+    --cor-secundaria
+  ); /* Cor secundária: links interativos */
   height: 3px;
   width: 0%;
   display: block;
@@ -71,7 +73,7 @@ body {
   flex-direction: column;
 }
 
-.body2{
+.body2 {
   background-color: #36373aec;
   border-radius: 10px;
   padding-top: 0.5cm;
@@ -82,7 +84,7 @@ body {
   min-width: 500px;
 }
 
-.cabecalhoFixo{
+.cabecalhoFixo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,7 +99,7 @@ body {
   margin-top: 1.2cm;
 }
 
-.cabecalhoFixo nav{
+.cabecalhoFixo nav {
   display: flex;
   position: fixed;
   align-items: center;
@@ -230,7 +232,7 @@ li {
 
 /* Botões de ação */
 .btn {
-  background-color: var(--cor-primaria); /* Cor primária: botões de ação */
+  background-color: var(--cor-secundaria); /* Cor primária: botões de ação */
   color: white; /* Texto branco */
   padding: 15px 20px;
   border-radius: 10px;
@@ -240,7 +242,7 @@ li {
 }
 
 .btn:hover {
-  background-color: var(--cor-hover); /* Cor hover dos botões */
+  background-color: var(--cor-fundo); /* Cor hover dos botões */
 }
 
 a {
@@ -259,7 +261,7 @@ a::after {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #1331d6;
+  background-color: #000000;
   transform-origin: bottom right;
   transition: transform 0.3s ease-out;
 }
@@ -286,7 +288,7 @@ a:hover {
   margin-top: 2cm;
   border-radius: 15px;
   border: 3px solid rgb(199, 199, 199);
-  color: rgb(37, 235, 225);
+  color: rgb(134, 141, 40);
   font-size: 22px;
   padding: 10px 20px;
   display: inline-block;
@@ -326,7 +328,7 @@ a:hover {
 }
 
 .btn_cont:hover {
-  color: #3fd679;
+  color: var(--cor-secundaria);
 }
 
 .btn_cont:hover::before {
@@ -366,7 +368,7 @@ a:hover {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #d8d5c7; /* Mantive essa cor pois não foi especificada na nova paleta */
+  background-color: #f1f1f1; /* Mantive essa cor pois não foi especificada na nova paleta */
   padding: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
