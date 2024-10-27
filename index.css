@@ -29,16 +29,7 @@ body {
   padding-right: 0.5cm;
   max-width: 1400px;
   min-width: 500px;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
 }
-
-.container2{
-  display: flex;
-  align-items: center;
-}
-
 /* AJUSTES NECESSARIOS */
 
 .cabecalhoFixo nav{
@@ -359,6 +350,13 @@ a:hover {
   z-index: 1000;
 }
 
+/* ATIVAR DEPOIS */
+/* 
+.cookies-msg.mostrar {
+  display: block;
+}
+*/
+
 .cookies-text p {
   margin: 0;
   font-size: 16px;
@@ -366,6 +364,7 @@ a:hover {
 }
 
 .cookies-btn button {
+  margin-top: 0.3cm;
   padding: 10px 20px;
   font-size: 14px;
   color: #fff;
