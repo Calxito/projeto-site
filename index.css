@@ -374,12 +374,9 @@ a:hover {
   z-index: 1000;
 }
 
-/* ATIVAR DEPOIS */
-/* 
 .cookies-msg.mostrar {
   display: block;
 }
-*/
 
 .cookies-text p {
   margin: 0;
@@ -391,15 +388,15 @@ a:hover {
   margin-top: 0.3cm;
   padding: 10px 20px;
   font-size: 14px;
-  color: #fff;
-  background-color: var(--cor-primaria);
+  color: #000000;
+  background-color: var(--cor-secundaria);
   border: none;
   cursor: pointer;
   border-radius: 5px;
 }
 
 .cookies-btn button:hover {
-  background-color: var(--cor-hover);
+  background-color: var(--cor-fundo);
 }
 
 :root {
