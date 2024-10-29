@@ -231,54 +231,18 @@ li {
 .btn {
   background-color: var(--cor-secundaria); /* Cor primária: botões de ação */
   color: white; /* Texto branco */
-  padding: 15px 20px;
+  margin-top: 20px;
+  padding: 10px 15px;
   border-radius: 10px;
   display: inline-block;
   border: 1px var(--cor-borda); /* Cor da borda */
   transition: 1s;
+  border: 3px solid rgb(199, 199, 199);
+  font-size: 22px;
 }
 
 .btn:hover {
   background-color: var(--cor-fundo); /* Cor hover dos botões */
-}
-
-a {
-  color: #1331d6;
-  text-decoration: none;
-  position: relative;
-  display: inline-block;
-  padding-bottom: 1px;
-}
-
-a::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #000000;
-  transform-origin: bottom right;
-  transition: transform 0.3s ease-out;
-}
-
-a:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-a:hover {
-  color: #0f0785;
-}
-
-.btn {
-  padding: 10px 15px;
-  border-radius: 15px;
-  display: inline-block;
-  border: 3px solid rgb(199, 199, 199);
-  font-size: 22px;
-  position: relative;
 }
 
 .btn_cont {
@@ -334,6 +298,36 @@ a:hover {
 
 .btn_cont:hover::after {
   top: 0;
+}
+
+a {
+  color: #1331d6;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 1px;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+a:hover {
+  color: #0f0785;
 }
 
 @keyframes animate-outline {
