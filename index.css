@@ -6,11 +6,62 @@
   outline: none;
   margin-top: 0%;
   margin-bottom: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
 }
 
 /* Ajustes importados pelo Luiz começam aqui */
 
 /* AJUSTES NECESSARIOS */
+
+.logo_imagem img {
+  width: 200px;
+  height: auto;
+}
+
+header {
+  background-image: url("index\ imagens/Imagem do WhatsApp de 2024-11-06 à(s) 15.53.02_778b36b5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 1000px;
+  max-height: 100%;
+  margin-bottom: -100px;
+  box-shadow: 0 10px 50px 0px rgba(0, 0, 0, 1);
+  background-attachment: fixed;
+}
+
+/* Estilo do banner */
+.banner {
+  margin-top: 7cm;
+  margin-bottom: 2cm;
+  display: flex;
+  justify-content: center;
+}
+
+.banner .banner-text {
+  text-align: center;
+  padding: 0 90px;
+}
+
+.banner .banner-text h1 {
+  font-size: 96px;
+  color: white;
+}
+
+.banner .banner-text p {
+  font-size: 20px;
+  color: #ffffffb7;
+  font-weight: lighter;
+  margin: 18px 0;
+}
+
+body {
+  background-color: var(--cor-fundo); /* Fundo principal */
+  display: flex;
+  flex-direction: column;
+}
 
 nav {
   align-items: center;
@@ -19,6 +70,7 @@ nav {
   background-color: #2f323f; /* Fundo do cabeçalho */
   max-width: 1700px;
   min-width: 700px;
+  margin-top: 3%;
 }
 
 nav ul {
@@ -62,12 +114,7 @@ nav ul li a:not(.btn):hover::after {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-body {
-  background-color: var(--cor-fundo); /* Fundo principal */
-  display: flex;
-  flex-direction: column;
+  z-index: 0;
 }
 
 .body2 {
@@ -202,31 +249,6 @@ li {
   margin: 15px;
 }
 
-/* Estilo do banner */
-.banner {
-  margin-top: 7cm;
-  margin-bottom: 2cm;
-  display: flex;
-  justify-content: center;
-}
-
-.banner .banner-text {
-  text-align: center;
-  padding: 0 90px;
-}
-
-.banner .banner-text h1 {
-  font-size: 96px;
-  color: white;
-}
-
-.banner .banner-text p {
-  font-size: 20px;
-  color: #ffffffb7;
-  font-weight: lighter;
-  margin: 18px 0;
-}
-
 /* Botões de ação */
 .btn {
   background-color: var(--cor-secundaria); /* Cor primária: botões de ação */
@@ -340,14 +362,14 @@ a:hover {
 }
 
 .cookies-msg {
-  display: none; 
+  display: none;
   position: fixed;
-  bottom: 20px; 
-  width: 90%; 
+  bottom: 20px;
+  width: 90%;
   background-color: #f1f1f1;
   opacity: 0.9;
   padding: 20px;
-  border-radius: 10px; 
+  border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
@@ -373,23 +395,23 @@ a:hover {
   border-radius: 5px;
 }
 
-.cookies-btn button:hover, .aceitar_btn:hover {
+.cookies-btn button:hover,
+.aceitar_btn:hover {
   background-color: var(--cor-fundo);
-} 
+}
 
 .politica-background {
   display: none;
   position: fixed;
   z-index: 1;
-  left: 0;  
+  left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); 
+  background-color: rgba(0, 0, 0, 0.7);
   justify-content: center;
   align-items: center;
 }
-
 
 .politica_conteiner {
   position: relative;
@@ -400,23 +422,23 @@ a:hover {
   border-radius: 8px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   overflow-y: auto;
-  max-height: 80%; 
+  max-height: 80%;
 }
 
 .politica_conteiner p {
-  margin-bottom: 15px; 
-  line-height: 1.6; 
+  margin-bottom: 15px;
+  line-height: 1.6;
 }
 
 .politica_conteiner h2 {
-  margin-top: 0; 
-  margin-bottom: 15px; 
+  margin-top: 0;
+  margin-bottom: 15px;
   font-size: 1.8em;
 }
 
 .politica_conteiner h3 {
-  margin-top: 20px; 
-  margin-bottom: 10px; 
+  margin-top: 20px;
+  margin-bottom: 10px;
   font-size: 1.4em;
 }
 
