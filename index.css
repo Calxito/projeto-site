@@ -259,7 +259,7 @@ li {
   display: inline-block;
   border: 1px var(--cor-borda); /* Cor da borda */
   transition: 1s;
-  border: 3px solid rgb(199, 199, 199);
+  border: 3px solid rgb(134, 131, 131);
   font-size: 22px;
 }
 
@@ -467,9 +467,9 @@ a:hover {
 }
 
 :root {
-  --cor-fundo: #575963; /* Fundo em laranja claro */
+  --cor-fundo: #59595c; /* Fundo em laranja claro */
   --cor-primaria: #e2bd84; /* Cor primária clara */
-  --cor-secundaria: #a5960bdc; /* Cor Links interativos laranja */
+  --cor-secundaria: #d4c21b; /* Cor Links interativos laranja */
   --cor-borda: #ffb74d; /* Cor para caixa de fundo laranja */
   --cor-texto: #1a2e88e0; /* Laranja escuro para texto */
   --cor-hover: #1a2e88e0; /* Laranja mais escuro para hover */
