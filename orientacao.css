@@ -10,7 +10,7 @@
 :root {
   --cor-fundo: #ebeef1; /* Fundo em vermelho escuro */
   --cor-fundo-claro: #d9e2ef; /* Fundo dos blocos de texto */
-  --cor-primaria: #a5960bdc; /* Vermelho vivo para títulos e links */
+  --cor-primaria: #1331d6; /* Vermelho vivo para títulos e links */
   --cor-secundaria: #929292b4; /* Vermelho mais escuro para detalhes */
   --cor-borda: #575963; /* Borda vermelha */
   --cor-texto: #181515; /* Cor principal do texto */
@@ -58,7 +58,8 @@ button:hover {
   color: var(--cor-texto);
   border-radius: 18px;
   width: 150%;
-  max-width: 1000px; /* Limita a largura máxima das caixas */
+  min-width: 800px; /*limita alargura minima das caixas*/
+  max-width: 1500px; /* Limita a largura máxima das caixas */
   margin-bottom: 1cm;
 }
 
