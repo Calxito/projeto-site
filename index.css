@@ -47,7 +47,7 @@ header {
 
 .banner .banner-text h1 {
   font-size: 96px;
-  color: white;
+  color: #ffffff;
 }
 
 .banner .banner-text p {
@@ -67,7 +67,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 10px 30px;
-  background-color: #2f323f; /* Fundo do cabeçalho */
+  background-color: #7c6550; /* Fundo do cabeçalho */
   max-width: 1700px;
   min-width: 700px;
   margin-top: 3%;
@@ -95,7 +95,7 @@ nav ul li a {
 nav ul li a:not(.btn)::after {
   content: "";
   background-color: var(
-    --cor-secundaria
+    black
   ); /* Cor secundária: links interativos */
   height: 3px;
   width: 0%;
@@ -118,7 +118,7 @@ nav ul li a:not(.btn):hover::after {
 }
 
 .body2 {
-  background-color: #36373aec;
+  background-color: var(--cor-body2);
   border-radius: 10px;
   padding-top: 0.5cm;
   padding-bottom: 0.5cm;
@@ -126,6 +126,7 @@ nav ul li a:not(.btn):hover::after {
   padding-right: 1.2cm;
   max-width: 1400px;
   min-width: 500px;
+  box-shadow: 8px 10px 10px 3px rgba(0, 0, 0, 0.4), -8px 10px 10px 3px rgba(0, 0, 0, 0.4);
 }
 
 .cabecalhoFixo {
@@ -165,7 +166,7 @@ nav ul li a:not(.btn):hover::after {
 }
 
 .cabecalhoBTN a:hover {
-  color: rgb(184, 184, 184);
+  color: rgb(233, 228, 228);
 }
 
 .cabecalho {
@@ -219,7 +220,7 @@ li {
 }
 
 .grifado {
-  background-color: #5b5d68bb;
+  background-color: var(--cor-fundo);
   text-decoration: underline; /* Adiciona uma linha abaixo do texto */
   text-decoration-thickness: 1px; /* Ajuste a espessura da linha conforme necessário */
   display: inline-block;
@@ -236,9 +237,10 @@ li {
   margin-top: 40px;
   max-width: 1400px;
   min-width: 500px;
-  background-color: #ffffff;
+  background-color: var(--cor-balao);
   padding: 15px;
   border-radius: 10px;
+  box-shadow: 2px 4px 2px 3px rgba(0, 0, 0, 0.3), -2px 4px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 /* Ajustes importados pelo Luiz acabam aqui */
@@ -251,27 +253,28 @@ li {
 
 /* Botões de ação */
 .btn {
-  background-color: var(--cor-secundaria); /* Cor primária: botões de ação */
-  color: white; /* Texto branco */
+  background-color: var(--cor-banner); /* Cor primária: botões de ação */
+  color: rgb(0, 0, 0); /* Texto branco */
   margin-top: 20px;
   padding: 10px 15px;
   border-radius: 10px;
   display: inline-block;
   border: 1px var(--cor-borda); /* Cor da borda */
   transition: 1s;
-  border: 3px solid rgb(134, 131, 131);
+  border: 3px solid rgb(83, 83, 83);
   font-size: 22px;
 }
 
 .btn:hover {
-  background-color: var(--cor-fundo); /* Cor hover dos botões */
+  background-color: #857361; /* Cor hover dos botões */
+  color: rgb(255, 255, 255);
 }
 
 .btn_cont {
   margin-top: 2cm;
   border-radius: 15px;
   border: 3px solid rgb(199, 199, 199);
-  color: rgb(240, 255, 27);
+  color: rgb(255, 255, 255);
   font-size: 22px;
   padding: 10px 20px;
   display: inline-block;
@@ -297,7 +300,7 @@ li {
 }
 
 .btn_cont::after {
-  background-color: rgb(44, 69, 92);
+  background-color: rgba(44, 69, 92, 0.747);
   content: "";
   width: 100%;
   height: 100%;
@@ -323,7 +326,7 @@ li {
 }
 
 a {
-  color: #1331d6;
+  color: var(--cor-link);
   text-decoration: none;
   position: relative;
   display: inline-block;
@@ -349,7 +352,7 @@ a:hover::after {
 }
 
 a:hover {
-  color: #0f0785;
+  color: #5a4c3c;
 }
 
 @keyframes animate-outline {
@@ -366,7 +369,7 @@ a:hover {
   position: fixed;
   bottom: 20px;
   width: 90%;
-  background-color: #f1f1f1;
+  background-color: var(--cor-banner);
   opacity: 0.9;
   padding: 20px;
   border-radius: 10px;
@@ -381,23 +384,25 @@ a:hover {
 .cookies-text p {
   margin: 0;
   font-size: 16px;
-  color: #333;
+  color: #181313;
 }
 
 .cookies-btn button {
   margin-top: 0.3cm;
   padding: 10px 20px;
   font-size: 14px;
-  color: #000000;
-  background-color: var(--cor-secundaria);
+  color:#000000;
+  background-color: rgb(87, 84, 84);
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  transition: 0.5s;
 }
 
 .cookies-btn button:hover,
 .aceitar_btn:hover {
-  background-color: var(--cor-fundo);
+  color: rgb(255, 255, 255);
+  background-color: #4a362f;
 }
 
 .politica-background {
@@ -467,12 +472,14 @@ a:hover {
 }
 
 :root {
-  --cor-fundo: #59595c; /* Fundo em laranja claro */
-  --cor-primaria: #e2bd84; /* Cor primária clara */
-  --cor-secundaria: #d4c21b; /* Cor Links interativos laranja */
-  --cor-borda: #ffb74d; /* Cor para caixa de fundo laranja */
-  --cor-texto: #1a2e88e0; /* Laranja escuro para texto */
-  --cor-hover: #1a2e88e0; /* Laranja mais escuro para hover */
+  --cor-fundo: #d9ceb2; /* Fundo em laranja claro */
+  --cor-balao: #d8c8b8; /* Cor primária clara */
+  --cor-body2: #fff4e3; /* Cor Links interativos laranja */
+  --cor-borda: #4a362f; /* Cor para caixa de fundo laranja */
+  --cor-texto: #000000e0; /* Laranja escuro para texto */
+  --cor-hover: #4a362f; /* Laranja mais escuro para hover */
+  --cor-banner: #e2ddd9;
+  --cor-link: #af3508;
 }
 
 /* FUNCIONAMENTO CORRETO - NAO ALTERAR */
