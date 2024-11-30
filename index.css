@@ -67,7 +67,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 10px 30px;
-  background-color: #7c6550; /* Fundo do cabeçalho */
+  background-color: #a1a1a3; /* Fundo do cabeçalho */
   max-width: 1700px;
   min-width: 700px;
   margin-top: 3%;
@@ -260,13 +260,13 @@ li {
   border-radius: 10px;
   display: inline-block;
   border: 1px var(--cor-borda); /* Cor da borda */
-  transition: 1s;
+  transition: 0.4s;
   border: 3px solid rgb(83, 83, 83);
   font-size: 22px;
 }
 
 .btn:hover {
-  background-color: #857361; /* Cor hover dos botões */
+  background-color: #a1a1a1; /* Cor hover dos botões */
   color: rgb(255, 255, 255);
 }
 
@@ -282,8 +282,10 @@ li {
   position: relative;
   overflow: hidden;
   background: transparent;
-  transition: 0.3s;
+  transition: 0.5s;
+  /*
   z-index: 1;
+  */
 }
 
 .btn_cont::before {
@@ -295,7 +297,7 @@ li {
   position: absolute;
   top: -100%;
   left: 0;
-  z-index: -1;
+  z-index: 1;
   transition: 0.3s;
 }
 
@@ -352,7 +354,7 @@ a:hover::after {
 }
 
 a:hover {
-  color: #5a4c3c;
+  color: #535555;
 }
 
 @keyframes animate-outline {
@@ -374,7 +376,7 @@ a:hover {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+  z-index: 100;
 }
 
 .cookies-msg.mostrar {
@@ -402,7 +404,7 @@ a:hover {
 .cookies-btn button:hover,
 .aceitar_btn:hover {
   color: rgb(255, 255, 255);
-  background-color: #4a362f;
+  background-color: #06659c;
 }
 
 .politica-background {
@@ -422,12 +424,14 @@ a:hover {
   position: relative;
   padding: 30px;
   width: 90%;
-  max-width: 600px;
+  max-width: 700px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   overflow-y: auto;
   max-height: 80%;
+  margin-top: 15%;
+  margin-bottom: 5%;
 }
 
 .politica_conteiner p {
@@ -462,24 +466,25 @@ a:hover {
   width: 30%;
   padding: 10px;
   margin-top: 15px;
-  background-color: var(--cor-secundaria);
+  background-color: var(--cor-body2);
   color: white;
   text-align: center;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 :root {
-  --cor-fundo: #d9ceb2; /* Fundo em laranja claro */
-  --cor-balao: #d8c8b8; /* Cor primária clara */
-  --cor-body2: #fff4e3; /* Cor Links interativos laranja */
+  --cor-fundo: #ffffff; /* Fundo em laranja claro */
+  --cor-balao: #e6e5e5; /* Cor primária clara */
+  --cor-body2: #6391c7; /* Cor Links interativos laranja */
   --cor-borda: #4a362f; /* Cor para caixa de fundo laranja */
   --cor-texto: #000000e0; /* Laranja escuro para texto */
-  --cor-hover: #4a362f; /* Laranja mais escuro para hover */
-  --cor-banner: #e2ddd9;
-  --cor-link: #af3508;
+  --cor-hover: #000000; /* Laranja mais escuro para hover */
+  --cor-banner: #ebe9e8;
+  --cor-link: #0a41d6;
 }
 
 /* FUNCIONAMENTO CORRETO - NAO ALTERAR */
