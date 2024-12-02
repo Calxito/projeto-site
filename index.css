@@ -67,7 +67,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 10px 30px;
-  background-color: #a1a1a3; /* Fundo do cabeçalho */
+  background-color: #a1a1a3; /* #e2dfd8 Fundo do cabeçalho */
   max-width: 1700px;
   min-width: 700px;
   margin-top: 3%;
@@ -124,8 +124,8 @@ nav ul li a:not(.btn):hover::after {
   padding-bottom: 0.5cm;
   padding-left: 1.2cm;
   padding-right: 1.2cm;
-  max-width: 1400px;
-  min-width: 500px;
+  max-width: 95%;
+  min-width: 90%;
   box-shadow: 8px 10px 10px 3px rgba(0, 0, 0, 0.4), -8px 10px 10px 3px rgba(0, 0, 0, 0.4);
 }
 
@@ -235,7 +235,7 @@ li {
 .atividades-text {
   margin-bottom: 40px;
   margin-top: 40px;
-  max-width: 1400px;
+  max-width: 1650px;
   min-width: 500px;
   background-color: var(--cor-balao);
   padding: 15px;
