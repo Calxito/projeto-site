@@ -15,8 +15,8 @@
 /* AJUSTES NECESSARIOS */
 
 .logo_imagem img {
-  width: 200px;
-  height: auto;
+  width: 120px;
+  height: 120px;
 }
 
 header {
@@ -69,7 +69,7 @@ nav {
   background-color: #f0f0f0; /* #e2dfd8 Fundo do cabeçalho */
   max-width: 1700px;
   min-width: 700px;
-  margin-top: 3%;
+  margin-top: 5%;
 }
 
 nav ul {
