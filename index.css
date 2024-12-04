@@ -20,7 +20,7 @@
 }
 
 header {
-  background-image: url("index\ imagens/Imagem do WhatsApp de 2024-11-06 à(s) 15.53.02_778b36b5.jpg");
+  background-image: url("index\ imagens/Imagem do WhatsApp de 2024-12-03 à(s) 11.09.01_9022b0f4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   border-bottom-left-radius: 20px;
@@ -29,7 +29,6 @@ header {
   max-height: 100%;
   margin-bottom: -100px;
   box-shadow: 0 10px 50px 0px rgba(0, 0, 0, 1);
-  background-attachment: fixed;
 }
 
 /* Estilo do banner */
@@ -67,7 +66,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 10px 30px;
-  background-color: #a1a1a3; /* #e2dfd8 Fundo do cabeçalho */
+  background-color: #f0f0f0; /* #e2dfd8 Fundo do cabeçalho */
   max-width: 1700px;
   min-width: 700px;
   margin-top: 3%;
@@ -84,7 +83,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #ffffff; /* Cor do texto do cabeçalho */
+  color: #000000; /* Cor do texto do cabeçalho */
   text-transform: uppercase;
   font-size: 14px;
   display: block;
@@ -94,9 +93,7 @@ nav ul li a {
 /* Links interativos com cor secundária */
 nav ul li a:not(.btn)::after {
   content: "";
-  background-color: var(
-    black
-  ); /* Cor secundária: links interativos */
+  background-color: black; /* Cor secundária: links interativos */
   height: 3px;
   width: 0%;
   display: block;
@@ -166,7 +163,7 @@ nav ul li a:not(.btn):hover::after {
 }
 
 .cabecalhoBTN a:hover {
-  color: rgb(233, 228, 228);
+  color: rgb(9, 40, 214);
 }
 
 .cabecalho {
@@ -289,7 +286,7 @@ li {
 }
 
 .btn_cont::before {
-  background-color: rgb(44, 69, 92);
+  background-color: rgba(44, 69, 92, 0.541);
   content: "";
   width: 100%;
   height: 100%;
@@ -302,7 +299,6 @@ li {
 }
 
 .btn_cont::after {
-  background-color: rgba(44, 69, 92, 0.747);
   content: "";
   width: 100%;
   height: 100%;
@@ -316,7 +312,7 @@ li {
 }
 
 .btn_cont:hover {
-  color: var(--cor-secundaria);
+  color: rgb(255, 255, 255);
 }
 
 .btn_cont:hover::before {
