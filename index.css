@@ -133,6 +133,7 @@ nav ul li a:not(.btn):hover::after {
   align-items: center;
   justify-content: center;
   margin-top: 1.2cm;
+  font-size: 16px;
 }
 
 .cabecalhoFixo nav {
